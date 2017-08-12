@@ -8,6 +8,7 @@
 
 import UIKit
 
+// TODO: 今使ってない
 class SessionModel {
     func create(userID: String, password: String) throws -> String {
         if ( userID == "test" && password == "test" ) {

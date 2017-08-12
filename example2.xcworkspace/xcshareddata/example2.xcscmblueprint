@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "726CA66532C8302E000AD06014DBAD8004574C67",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "59105525EF57B0E105402E1E4B4D04CAE2E2DD8A" : 9223372036854775807,
+    "726CA66532C8302E000AD06014DBAD8004574C67" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5D76F1CD-D9A4-460D-8412-F8DBA15CBC72",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "59105525EF57B0E105402E1E4B4D04CAE2E2DD8A" : "",
+    "726CA66532C8302E000AD06014DBAD8004574C67" : "example2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "example2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "example2.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kawashi\/swift-learning",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "59105525EF57B0E105402E1E4B4D04CAE2E2DD8A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kawashi\/ios_signin_test.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "726CA66532C8302E000AD06014DBAD8004574C67"
+    }
+  ]
+}

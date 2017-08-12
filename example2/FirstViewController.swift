@@ -8,34 +8,41 @@
 
 import UIKit
 import RealmSwift
+import Alamofire
+import SwiftyJSON
 
 class FirstViewController: UIViewController {
     
-    @IBOutlet weak var UserID: UITextField!
+    @IBOutlet weak var userID: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var errorMessage: UILabel!
 
-    @IBAction func onClick(_ sender: Any) {
-        let Session = SessionModel()
+    @IBAction func signIn(_ sender: UIButton) {
+        let params = [
+            "user_id": userID.text!,
+            "password": password.text!
+        ]
         
-        do {
-            let sessionKey = try Session.create(userID: UserID.text!, password: password.text!)
-
-            // セッション登録
-            let userSession = UserSession()
-            userSession.userID = 1
-            userSession.key = sessionKey
-            let realm = try! Realm()
-            try! realm.write {
-                realm.deleteAll() // 一度全て削除する
-                realm.add(userSession)
+        print("リクエストを送ります")
+        
+        Alamofire.request("http://192.168.0.12:3000/login", method: .post, parameters: params).responseJSON { response in
+            if response.result.isSuccess {
+                print("通信成功")
+                let data = JSON(response.result.value)
+                if data["status"].string == "OK" {
+                    let userDefaults = UserDefaults.standard
+                    userDefaults.set(data["access_token"].string, forKey: "accessToken")
+                    self.moveNextPage()
+                } else {
+                    self.errorMessage.isHidden = false
+                }
+            } else {
+                print("通信失敗")
             }
-            
-            moveNextPage()
-        } catch {
-            errorMessage.isHidden = false
         }
+        
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
