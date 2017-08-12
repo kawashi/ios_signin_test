@@ -23,11 +23,8 @@ class FirstViewController: UIViewController {
             "password": password.text!
         ]
         
-        print("リクエストを送ります")
-        
         Alamofire.request("http://192.168.0.12:3000/login", method: .post, parameters: params).responseJSON { response in
             if response.result.isSuccess {
-                print("通信成功")
                 let data = JSON(response.result.value)
                 if data["status"].string == "OK" {
                     let userDefaults = UserDefaults.standard
@@ -37,7 +34,6 @@ class FirstViewController: UIViewController {
                     self.errorMessage.isHidden = false
                 }
             } else {
-                print("通信失敗")
             }
         }
         
@@ -47,6 +43,21 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         errorMessage.isHidden = true
+        
+        let userDefaults = UserDefaults.standard
+        if userDefaults.object(forKey: "accessToken") != nil {
+            print("リクエスト試行する")
+            let params = ["access_token": userDefaults.string(forKey: "accessToken")!]
+            Alamofire.request("http://192.168.0.12:3000/auth_check", method: .post, parameters: params).responseJSON { response in
+                if response.result.isSuccess {
+                    let data = JSON(response.result.value)
+                    if data["status"].string == "OK" {
+                        self.moveNextPage()
+                    }
+                }
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

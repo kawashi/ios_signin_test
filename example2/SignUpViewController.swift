@@ -19,12 +19,11 @@ class SignUpController: UIViewController {
         
         Alamofire.request("http://192.168.0.12:3000/sign_up", method: .post, parameters: params).responseJSON { response in
             if response.result.isSuccess {
-                // UserDefault にセッションキー持たせる
                 let data = JSON(response.result.value)
                 let userDefaults = UserDefaults.standard
                 let accessToken = data["access_token"].string
                 userDefaults.set(accessToken, forKey: "accessToken")
-                // ホームページへ移動
+
                 self.moveNextPage()
             } else {
                 // エラーメッセージを表示

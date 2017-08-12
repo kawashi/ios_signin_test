@@ -5,7 +5,6 @@ import SwiftyJSON
 
 class NextViewController: UIViewController {
 
-    // セッションを破棄してログインページに戻る
     @IBAction func signOut(_ sender: UIButton) {
         let userDefaults = UserDefaults.standard
         userDefaults.removeObject(forKey: "accessToken")
