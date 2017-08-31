@@ -65,6 +65,14 @@
                                     <segue destination="ydc-Gc-2Ae" kind="show" id="0ac-a1-0rs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNn-X6-Vfv">
+                                <rect key="frame" x="133" y="439" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="画像取得テスト"/>
+                                <connections>
+                                    <segue destination="XHV-2B-eCD" kind="show" id="yrd-JK-JYj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -181,6 +189,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jt2-LT-D4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2" y="883"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="fNB-pl-gQs">
+            <objects>
+                <viewController id="XHV-2B-eCD" customClass="ImageViewController" customModule="example2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="riP-W8-QxY"/>
+                        <viewControllerLayoutGuide type="bottom" id="76a-op-9B1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uWn-6T-SjN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGB-hF-m5S">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rX5-Gh-Aa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706" y="883"/>
         </scene>
     </scenes>
 </document>

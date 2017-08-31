@@ -36,7 +36,6 @@ class FirstViewController: UIViewController {
             } else {
             }
         }
-        
     }
     
     

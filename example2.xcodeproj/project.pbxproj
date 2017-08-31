@@ -20,6 +20,7 @@
 		9FBE73531F1C741A009AAF61 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE73521F1C741A009AAF61 /* FirstViewController.swift */; };
 		9FBE73551F1C74AB009AAF61 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE73541F1C74AB009AAF61 /* NextViewController.swift */; };
 		9FBE73591F1C8295009AAF61 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBE73581F1C8295009AAF61 /* SessionModel.swift */; };
+		9FDD10E31F52056E00A7BB8C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDD10E21F52056E00A7BB8C /* ImageViewController.swift */; };
 		FF6C4C956D1FB7C8375D3F32 /* Pods_example2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F3591746BB842F6DD772E5 /* Pods_example2.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		9FBE73521F1C741A009AAF61 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		9FBE73541F1C74AB009AAF61 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		9FBE73581F1C8295009AAF61 /* SessionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
+		9FDD10E21F52056E00A7BB8C /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		B294237F03DC217343CD504C /* Pods_example2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_example2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB27F8317C4834357014256D /* Pods-example2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example2.release.xcconfig"; path = "Pods/Target Support Files/Pods-example2/Pods-example2.release.xcconfig"; sourceTree = "<group>"; };
 		E6AA6416E2CCD80310BB42AF /* Pods-example2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-example2UITests/Pods-example2UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				9FBE73541F1C74AB009AAF61 /* NextViewController.swift */,
 				9FBE73521F1C741A009AAF61 /* FirstViewController.swift */,
+				9FDD10E21F52056E00A7BB8C /* ImageViewController.swift */,
 				9FB8B4461F3F737500842E0B /* SignUpViewController.swift */,
 			);
 			name = ViewController;
@@ -488,6 +491,7 @@
 				9FB8B4471F3F737500842E0B /* SignUpViewController.swift in Sources */,
 				9FBE73531F1C741A009AAF61 /* FirstViewController.swift in Sources */,
 				9F513FC91F1CECC100077116 /* UserSession.swift in Sources */,
+				9FDD10E31F52056E00A7BB8C /* ImageViewController.swift in Sources */,
 				9FBE73551F1C74AB009AAF61 /* NextViewController.swift in Sources */,
 				9FBE73591F1C8295009AAF61 /* SessionModel.swift in Sources */,
 				9FBE73251F1BCDB9009AAF61 /* AppDelegate.swift in Sources */,

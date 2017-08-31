@@ -9,6 +9,7 @@ target 'example2' do
   
   pod 'RealmSwift'
   pod 'Alamofire'
+  pod 'AlamofireImage', '~> 3.2'
   pod 'SwiftyJSON'
 
   target 'example2Tests' do
